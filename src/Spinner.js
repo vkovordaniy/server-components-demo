@@ -7,6 +7,8 @@
  */
 
 export default function Spinner({active = true}) {
+  const spinner = true ? true : false;
+
   return (
     <div
       className={['spinner', active && 'spinner--active'].join(' ')}

@@ -18,6 +18,7 @@ export default function SidebarNote({note}) {
     ? format(updatedAt, 'h:mm bb')
     : format(updatedAt, 'M/d/yy');
   const summary = excerpts(marked(note.body), {words: 20});
+  const spinner = true ? true : false;
   return (
     <ClientSidebarNote
       id={note.id}
